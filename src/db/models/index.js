@@ -1,17 +1,17 @@
 const { User, UserSchema } = require("./users.model");
 const { Producto, ProductoSchema } = require("./productos.model");
-/* const {
-  ProductoExtruidos,
+const {
+  ProductoExtruido,
   ProductoExtruidoSchema,
-} = require("./productosExtruidos.model"); */
+} = require("./productosExtruidos.model");
 
 function setupModels(sequelize) {
   User.init(UserSchema, User.config(sequelize));
   Producto.init(ProductoSchema, Producto.config(sequelize));
-  /*  ProductoExtruidos.init(
+  ProductoExtruido.init(
     ProductoExtruidoSchema,
-    ProductoExtruidos.config(sequelize)
-  ); */
+    ProductoExtruido.config(sequelize)
+  );
 }
 
 module.exports = setupModels;
