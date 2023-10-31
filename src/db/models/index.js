@@ -4,6 +4,7 @@ const {
   ProductoExtruido,
   ProductoExtruidoSchema,
 } = require("./productosExtruidos.model");
+const { Etiqueta, EtiquetaSchema } = require("./etiquetas.model");
 
 function setupModels(sequelize) {
   User.init(UserSchema, User.config(sequelize));
@@ -12,6 +13,7 @@ function setupModels(sequelize) {
     ProductoExtruidoSchema,
     ProductoExtruido.config(sequelize)
   );
+  Etiqueta.init(EtiquetaSchema, Etiqueta.config(sequelize));
 }
 
 module.exports = setupModels;
