@@ -46,16 +46,27 @@ const EtiquetaSchema = {
     type: DataTypes.BOOLEAN,
     field: "polvos",
   },
-  /*  status: {
+  estado: {
     allowNull: false,
     type: DataTypes.STRING,
-    field: "status",
-  }, */
+    field: "estado",
+  },
+
+  extrusor: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "extrusor",
+  },
+  posicion: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "posicion",
+  },
 };
 
 // Definir la relación de tabla foránea manualmente
 Etiqueta.belongsToProducto = () => {
-  Etiqueta.belongsTo(Productos, {
+  Etiqueta.belongsTo(productos, {
     foreignKey: "id_producto",
     as: "producto",
   });
