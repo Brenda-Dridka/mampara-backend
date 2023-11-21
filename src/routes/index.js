@@ -5,6 +5,7 @@ const productosRouter = require("./producto.router");
 const productosExtruidosRouter = require("./productoExtruido.router");
 const etiquetasRouter = require("./etiqueta.router");
 const extrusoresRouter = require("./extrusor.router");
+const ext54lletiquetasRouter = require("./ext54lletiqueta.router");
 
 function routerApi(app) {
   const router = express.Router();
@@ -14,6 +15,7 @@ function routerApi(app) {
   router.use("/productos-extruidos", productosExtruidosRouter);
   router.use("/etiquetas", etiquetasRouter);
   router.use("/extrusores", extrusoresRouter);
+  router.use("./ext54lletiquetas", ext54lletiquetasRouter);
 }
 
 module.exports = routerApi;
