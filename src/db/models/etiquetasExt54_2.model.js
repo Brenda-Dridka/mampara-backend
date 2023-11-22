@@ -1,19 +1,19 @@
 const { Model, DataTypes, Sequelize } = require("sequelize");
 
-const EXT54LLETIQUETAS_TABLE = "Ext54llEtiquetas";
+const ETIQUETASEXT54_2_TABLE = "EtiquetasExt54_2";
 
-class Ext54llEtiqueta extends Model {
+class EtiquetaExt54_2 extends Model {
   static config(sequelize) {
     return {
       sequelize,
-      tableName: EXT54LLETIQUETAS_TABLE,
-      modelName: "Ext54llEtiqueta",
+      tableName: ETIQUETASEXT54_2_TABLE,
+      modelName: "EtiquetaExt54_2",
       timestamps: true,
     };
   }
 }
 
-const Ext54llEtiquetaSchema = {
+const EtiquetaExt54_2Schema = {
   id: {
     allowNull: false,
     autoIncrement: true,
@@ -57,6 +57,19 @@ const Ext54llEtiquetaSchema = {
     type: DataTypes.STRING,
     field: "extrusor",
   },
+  posicion: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "posicion",
+  },
 };
 
-module.exports = { Ext54llEtiqueta, Ext54llEtiquetaSchema };
+// Definir la relación de tabla foránea manualmente
+EtiquetaExt54_2.belongsToProducto = () => {
+  EtiquetaExt54_2.belongsTo(productos, {
+    foreignKey: "id_producto",
+    as: "producto",
+  });
+};
+
+module.exports = { EtiquetaExt54_2, EtiquetaExt54_2Schema };

@@ -1,20 +1,20 @@
 const { models } = require("../libs/sequelize");
 
-class Ext54llEtiquetasService {
+class EtiquetasExt54_2Service {
   constructor() {}
 
   async find() {
-    const res = await models.Ext54llEtiqueta.findAll();
+    const res = await models.EtiquetaExt54_2.findAll();
     return res;
   }
 
   async findOne(id) {
-    const res = await models.Ext54llEtiqueta.findByPk(id);
+    const res = await models.EtiquetaExt54_2.findByPk(id);
     return res;
   }
 
   async create(data) {
-    const res = await models.Ext54llEtiqueta.create(data);
+    const res = await models.EtiquetaExt54_2.create(data);
     return res;
   }
 
@@ -31,4 +31,4 @@ class Ext54llEtiquetasService {
   }
 }
 
-module.exports = Ext54llEtiquetasService;
+module.exports = EtiquetasExt54_2Service;
