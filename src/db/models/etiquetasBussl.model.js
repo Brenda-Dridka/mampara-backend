@@ -57,6 +57,11 @@ const EtiquetaBusslSchema = {
     type: DataTypes.STRING,
     field: "extrusor",
   },
+  posicion: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "posicion",
+  },
 };
 
 module.exports = { EtiquetaBussl, EtiquetaBusslSchema };

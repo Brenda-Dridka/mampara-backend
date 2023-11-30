@@ -57,6 +57,11 @@ const EtiquetaExt70_2Schema = {
     type: DataTypes.STRING,
     field: "extrusor",
   },
+  posicion: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "posicion",
+  },
 };
 
 module.exports = { EtiquetaExt70_2, EtiquetaExt70_2Schema };

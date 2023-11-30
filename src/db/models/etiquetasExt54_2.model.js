@@ -57,6 +57,11 @@ const EtiquetaExt54_2Schema = {
     type: DataTypes.STRING,
     field: "extrusor",
   },
+  posicion: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "posicion",
+  },
 };
 
 // Definir la relación de tabla foránea manualmente
