@@ -1,4 +1,8 @@
-const { models } = require("../libs/sequelize");
+const { models, sequelize } = require("../libs/sequelize");
+const {
+  EtiquetaExt54_2Schema,
+  EtiquetaExt54_2,
+} = require("../db/models/etiquetasExt54_2.model");
 
 class EtiquetasExt54_2Service {
   constructor() {}
@@ -28,6 +32,27 @@ class EtiquetasExt54_2Service {
     const model = await this.findOne(id);
     await model.destroy();
     return { deleted: true };
+  }
+
+  async createMany(etiquetaExt54_2) {
+    try {
+      // Inicia la transacción
+      await sequelize.transaction(async (t) => {
+        // Guarda cada etiqueta en la transacción
+        await Promise.all(
+          etiquetaExt54_2.map(async (etiquetaExt54_2) => {
+            await models.EtiquetaExt54_2.create(etiquetaExt54_2, {
+              transaction: t,
+            });
+          })
+        );
+      });
+
+      console.log("Guardado masivo exitoso");
+    } catch (error) {
+      console.error("Error al realizar el guardado masivo:", error);
+      throw error;
+    }
   }
 }
 
