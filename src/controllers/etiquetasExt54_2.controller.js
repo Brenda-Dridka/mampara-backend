@@ -11,7 +11,7 @@ const service = new EtiquetasExt54_2Service();
 };
  */
 
-const create = async (req, res) => {
+/* const create = async (req, res) => {
   try {
     // Verifica que el cuerpo de la solicitud contenga un array de etiquetas
     if (!Array.isArray(req.body)) {
@@ -30,7 +30,28 @@ const create = async (req, res) => {
     res.status(500).send({ success: false, message: error.message });
   }
 };
+ */
 
+const create = async (req, res) => {
+  try {
+    // Verifica que el cuerpo de la solicitud contenga un array de etiquetas
+    if (!Array.isArray(req.body)) {
+      return res.status(400).json({
+        success: false,
+        message: "Se esperaba un array de etiquetas.",
+      });
+    }
+
+    // Elimina todos los datos existentes
+    await service.deleteMany();
+
+    // Realiza el guardado masivo de etiquetas
+    const response = await service.createMany(req.body);
+    res.json({ success: true, data: response });
+  } catch (error) {
+    res.status(500).send({ success: false, message: error.message });
+  }
+};
 const get = async (req, res) => {
   try {
     const response = await service.find();

@@ -64,12 +64,4 @@ const EtiquetaExt54_2Schema = {
   },
 };
 
-// Definir la relación de tabla foránea manualmente
-EtiquetaExt54_2.belongsToProducto = () => {
-  EtiquetaExt54_2.belongsTo(productos, {
-    foreignKey: "id_producto",
-    as: "producto",
-  });
-};
-
 module.exports = { EtiquetaExt54_2, EtiquetaExt54_2Schema };
