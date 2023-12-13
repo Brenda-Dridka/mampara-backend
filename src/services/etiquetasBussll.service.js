@@ -1,20 +1,24 @@
 const { models, sequelize } = require("../libs/sequelize");
+const {
+  EtiquetaBussl,
+  EtiquetaBusslSchema,
+} = require("../db/models/etiquetasBussl.model");
 
-class EtiquetasExt70_2Service {
+class EtiquetasBusslService {
   constructor() {}
 
   async find() {
-    const res = await models.EtiquetaExt70_2.findAll();
+    const res = await models.EtiquetaBussl.findAll();
     return res;
   }
 
   async findOne(id) {
-    const res = await models.EtiquetaExt70_2.findByPk(id);
+    const res = await models.EtiquetaBussl.findByPk(id);
     return res;
   }
 
   async create(data) {
-    const res = await models.EtiquetaExt70_2.create(data);
+    const res = await models.EtiquetaBussl.create(data);
     return res;
   }
 
@@ -33,14 +37,14 @@ class EtiquetasExt70_2Service {
   async deleteMany() {
     try {
       // Asegúrate de tener el modelo definido correctamente en el servicio
-      if (!models.EtiquetaExt70_2) {
+      if (!models.EtiquetaBussl) {
         throw new Error(
           "El modelo no está inicializado correctamente en el servicio."
         );
       }
 
       // Elimina todos los registros de la tabla
-      await models.EtiquetaExt70_2.destroy({ where: {} });
+      await models.EtiquetaBussl.destroy({ where: {} });
 
       console.log("Eliminación masiva exitosa");
     } catch (error) {
@@ -48,15 +52,14 @@ class EtiquetasExt70_2Service {
       throw error;
     }
   }
-
-  async createMany(etiquetaExt70_2) {
+  async createMany(etiquetaBussl) {
     try {
       // Inicia la transacción
       await sequelize.transaction(async (t) => {
         // Guarda cada etiqueta en la transacción
         await Promise.all(
-          etiquetaExt70_2.map(async (etiquetaExt70_2) => {
-            await models.EtiquetaExt70_2.create(etiquetaExt70_2, {
+          etiquetaBussl.map(async (etiquetaBussl) => {
+            await models.EtiquetaBussl.create(etiquetaBussl, {
               transaction: t,
             });
           })
@@ -71,4 +74,4 @@ class EtiquetasExt70_2Service {
   }
 }
 
-module.exports = EtiquetasExt70_2Service;
+module.exports = EtiquetasBusslService;
