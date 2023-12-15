@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const etiquetasExt54_2Controller = require("../../controllers/etiquetasExt54_2.controller");
+const etiquetasExt40Controller = require("../../controllers/extrusores/etiquetasExt40.controller");
 
 router
-  .get("/", etiquetasExt54_2Controller.get)
-  .get("/:id", etiquetasExt54_2Controller.getById)
-  .post("/", etiquetasExt54_2Controller.create)
-  .put("/:id", etiquetasExt54_2Controller.update)
-  .delete("/:id", etiquetasExt54_2Controller._delete);
+  .get("/", etiquetasExt40Controller.get)
+  .get("/:id", etiquetasExt40Controller.getById)
+  .post("/", etiquetasExt40Controller.create)
+  .put("/:id", etiquetasExt40Controller.update)
+  .delete("/:id", etiquetasExt40Controller._delete);
 
 module.exports = router;

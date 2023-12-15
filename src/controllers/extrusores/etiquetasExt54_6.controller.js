@@ -1,5 +1,5 @@
-const EtiquetasExt54_2Service = require("../services/etiquetasExt54_2.service");
-const service = new EtiquetasExt54_2Service();
+const EtiquetasExt54_6Service = require("../../services/extrusores/etiquetasExt54_6.service");
+const service = new EtiquetasExt54_6Service();
 
 /* const create = async (req, res) => {
   try {

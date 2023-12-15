@@ -1,19 +1,19 @@
 const { Model, DataTypes, Sequelize } = require("sequelize");
 
-const ETIQUETASEXT54_2_TABLE = "EtiquetasExt54_2";
+const ETIQUETASBUSSIITABLE = "EtiquetaBussll";
 
-class EtiquetaExt54_2 extends Model {
+class EtiquetaBussll extends Model {
   static config(sequelize) {
     return {
       sequelize,
-      tableName: ETIQUETASEXT54_2_TABLE,
-      modelName: "EtiquetaExt54_2",
+      tableName: ETIQUETASBUSSIITABLE,
+      modelName: "EtiquetaBussll",
       timestamps: true,
     };
   }
 }
 
-const EtiquetaExt54_2Schema = {
+const EtiquetaBussllSchema = {
   id: {
     allowNull: false,
     autoIncrement: true,
@@ -64,4 +64,4 @@ const EtiquetaExt54_2Schema = {
   },
 };
 
-module.exports = { EtiquetaExt54_2, EtiquetaExt54_2Schema };
+module.exports = { EtiquetaBussll, EtiquetaBussllSchema };
