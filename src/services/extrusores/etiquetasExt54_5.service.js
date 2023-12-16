@@ -53,7 +53,7 @@ class EtiquetasExt54_5Service {
     }
   }
 
-  async createMany(etiquetaExt54_2) {
+  async createMany(etiquetaExt54_5) {
     try {
       // Inicia la transacción
       await sequelize.transaction(async (t) => {

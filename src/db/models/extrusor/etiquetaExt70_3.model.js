@@ -7,7 +7,7 @@ class EtiquetaExt70_3 extends Model {
     return {
       sequelize,
       tableName: ETIQUETASEXT70_3_TABLE,
-      modelName: "EtiquetaExt70_30",
+      modelName: "EtiquetaExt70_3",
       timestamps: true,
     };
   }

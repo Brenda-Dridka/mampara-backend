@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const etiquetasExt58Controller = require("../../controllers/extrusores/etiquetasExt54_8.controller");
+const etiquetasExt58Controller = require("../../controllers/extrusores/etiquetasExt58.controller");
 
 router
   .get("/", etiquetasExt58Controller.get)

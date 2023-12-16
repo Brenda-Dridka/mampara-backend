@@ -21,6 +21,7 @@ const create = async (req, res) => {
     res.status(500).send({ success: false, message: error.message });
   }
 };
+
 const get = async (req, res) => {
   try {
     const response = await service.find();

@@ -38,6 +38,7 @@ function routerApi(app) {
   router.use("/etiquetasBussl", etiquetasBusslRouter);
   router.use("/etiquetasExt70_2", etiquetasExt70_2Router);
   router.use("/etiquetasExt54_4", etiquetasExt54_4Router);
+
   router.use("/etiquetasExt54_5", etiquetasExt54_5Router);
   router.use("/etiquetasExt54_1", etiquetasExt54_1Router);
   router.use("/etiquetasExt58", etiquetasExt58Router);
