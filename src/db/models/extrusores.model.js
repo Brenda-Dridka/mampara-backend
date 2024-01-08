@@ -1,6 +1,6 @@
 const { Model, DataTypes, Sequelize } = require("sequelize");
 
-const EXTRUSORES_TABLE = "Extrusores";
+const EXTRUSORES_TABLE = "extrusores";
 
 class Extrusor extends Model {
   static config(sequelize) {

@@ -1,6 +1,6 @@
 const { Model, DataTypes, Sequelize } = require("sequelize");
 
-const ETIQUETAS_TABLE = "Etiquetas";
+const ETIQUETAS_TABLE = "etiquetas";
 
 class Etiqueta extends Model {
   static config(sequelize) {

@@ -1,6 +1,6 @@
 const { Model, DataTypes, Sequelize } = require("sequelize");
 
-const ETIQUETASBUSSITABLE = "EtiquetaBussl";
+const ETIQUETASBUSSITABLE = "etiquetaBussl";
 
 class EtiquetaBussl extends Model {
   static config(sequelize) {
