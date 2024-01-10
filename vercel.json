@@ -7,7 +7,13 @@
     ],
     "routes": [
       {
-        "src": "/(.*)"
+        "src": "/routes/(.*)", 
+        "dest": "/src/routes/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/src/$1"
       }
     ]
   }
+  
