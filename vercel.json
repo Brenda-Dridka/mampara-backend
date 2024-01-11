@@ -11,10 +11,7 @@
              "src": "../src/routes",
              "dest": "/"
             }
-           ],
+           ]
 
-    "rewrites": [{
-            "source": "/routes/(.*)",
-            "destination": "/routes/index.js"
-          }]
+  
 }
