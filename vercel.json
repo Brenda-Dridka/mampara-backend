@@ -11,18 +11,5 @@
              "src": "../src/routes/index.js",
              "dest": "../src/routes/index.js"
             }
-           ],
-     "functions": {
-            "routes/index.js": {
-              "memory": 3008,
-              "maxDuration": 30
-            },
-            "routes/*.js": {
-              "memory": 3008,
-              "maxDuration": 30
-            }
-          }
-
-
-  
+           ]
 }
