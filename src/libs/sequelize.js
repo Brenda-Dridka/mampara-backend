@@ -5,12 +5,6 @@ const { Sequelize } = require("sequelize");
 const { config } = require("../config/config");
 const setupModels = require("../db/models");
 
-import mysql2 from "mysql2";
-if (options.dialect === "mysql") {
-  options.dialectModule = mysql2;
-}
-new Sequelize(options);
-
 const sequelize = new Sequelize(
   config.dbName,
   config.dbUser,
