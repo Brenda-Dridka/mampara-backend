@@ -27,7 +27,7 @@ const etiquetasExt54_8Router = require("./extrusores/etiquetasExt54_8.router");
 
 function routerApi(app) {
   const router = express.Router();
-  app.use("/api/v1", router);
+  app.use("/", router);
   router.use("/users", usersRouter);
   router.use("/productos", productosRouter);
   router.use("/productos-extruidos", productosExtruidosRouter);
