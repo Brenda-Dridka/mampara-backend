@@ -1,4 +1,4 @@
-/* const express = require("express");
+const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
@@ -22,8 +22,9 @@ app.listen(port, () => {
   console.log("Port ==> ", port);
 });
 
-module.exports = app; */
-const express = require("express");
+module.exports = app;
+
+/* const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
@@ -41,4 +42,4 @@ app.get("/", (req, res) => {
 
 routerApi(app);
 
-module.exports = app;
+module.exports = app; */

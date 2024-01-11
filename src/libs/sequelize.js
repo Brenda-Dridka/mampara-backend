@@ -1,6 +1,6 @@
 /* implementacion de carga masiva
  */
-
+import mysql2 from "mysql2";
 const { Sequelize } = require("sequelize");
 const { config } = require("../config/config");
 const setupModels = require("../db/models");
@@ -12,6 +12,7 @@ const sequelize = new Sequelize(
   {
     host: config.dbHost,
     dialect: "mysql",
+    dialectModule: mysql2,
   }
 );
 
