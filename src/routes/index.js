@@ -5,7 +5,6 @@ const productosRouter = require("./producto.router");
 const productosExtruidosRouter = require("./productoExtruido.router");
 const etiquetasRouter = require("./etiqueta.router");
 const extrusoresRouter = require("./extrusor.router");
-
 //implementacion de las etiquetas por extrusor
 const etiquetasExt54_2Router = require("./etiquetaext54_2.router");
 const etiquetasBusslRouter = require("./etiquetaBussl.router");
