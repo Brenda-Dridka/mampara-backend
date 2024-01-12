@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
   res.send("Backend con NodeJS - Express + CRUD API REST + MySQL");
 });
 
+app.get("/hola", (req, res) => {
+  res.send("hola");
+});
+
 routerApi(app);
 
 app.listen(port, () => {
