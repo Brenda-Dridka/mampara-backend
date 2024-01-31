@@ -1,8 +1,4 @@
 const { models, sequelize } = require("../libs/sequelize");
-const {
-  ProductoExtruidoSchema,
-  ProductoExtruido,
-} = require("../db/models/productosExtruidos.model");
 
 class ProductosExtruidosService {
   constructor() {}
