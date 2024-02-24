@@ -33,7 +33,7 @@ const EtiquetaExt54_1Schema = {
   },
   fecha: {
     allowNull: false,
-    type: DataTypes.DATE,
+    type: DataTypes.STRING,
     field: "fecha",
   },
   kilos: {

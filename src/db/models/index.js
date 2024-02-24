@@ -78,6 +78,8 @@ const {
   EtiquetaExt54_8Schema,
 } = require("./extrusor/etiquetasExt54_8.model");
 
+const { Permiso, PermisoSchema } = require("./permisos.model");
+
 function setupModels(sequelize) {
   User.init(UserSchema, User.config(sequelize));
   Producto.init(ProductoSchema, Producto.config(sequelize));
@@ -164,6 +166,8 @@ function setupModels(sequelize) {
     EtiquetaExt54_8Schema,
     EtiquetaExt54_8.config(sequelize)
   );
+
+  Permiso.init(PermisoSchema, Permiso.config(sequelize));
 }
 
 module.exports = setupModels;

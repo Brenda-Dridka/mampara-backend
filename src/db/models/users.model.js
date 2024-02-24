@@ -25,10 +25,25 @@ const UserSchema = {
     type: DataTypes.STRING,
     field: "nombre",
   },
-  correo: {
+  apellido: {
     allowNull: false,
     type: DataTypes.STRING,
-    field: "correo",
+    field: "apellido",
+  },
+  username: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "username",
+  },
+  password: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "password",
+  },
+  rol_ususario: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "rol_ususario",
   },
 };
 
