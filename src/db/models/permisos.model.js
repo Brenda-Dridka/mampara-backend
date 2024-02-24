@@ -12,7 +12,7 @@ class Permiso extends Model {
     };
   }
 }
-
+/* roles */
 const PermisoSchema = {
   id: {
     allowNull: false,
