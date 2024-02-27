@@ -5,11 +5,13 @@ class RolesService {
 
   async find() {
     const res = await models.Rol.findAll();
+    console.log({res})
     return res;
   }
 
   async findOne(id) {
     const res = await models.Rol.findByPk(id);
+    console.log({res__:res})
     return res;
   }
 

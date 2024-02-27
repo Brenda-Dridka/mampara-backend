@@ -25,6 +25,11 @@ const RolesSchema = {
     type: DataTypes.STRING,
     field: "nombre",
   },
+  permisos: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "permisos",
+  },
 };
 
 module.exports = { Rol, RolesSchema };
