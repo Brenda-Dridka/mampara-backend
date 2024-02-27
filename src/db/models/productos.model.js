@@ -45,6 +45,21 @@ const ProductoSchema = {
     type: DataTypes.STRING,
     field: "b",
   },
+  r: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "r",
+  },
+  g: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "g",
+  },
+  b_: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "b_",
+  },
 };
 
 module.exports = { Producto, ProductoSchema };
