@@ -24,6 +24,8 @@ const etiquetasExt54_6Router = require("./extrusores/etiquetasExt54_6.router");
 const etiquetasExt70_3Router = require("./extrusores/etiquetaExt70_3.router");
 const etiquetasExt54_8Router = require("./extrusores/etiquetasExt54_8.router");
 const permisos_Router = require("./permiso.router");
+const roles_Router = require("./rol.router");
+const rolesPermisos_Router = require("./rolPermiso.router");
 
 function routerApi(app) {
   const router = express.Router();
@@ -54,6 +56,8 @@ function routerApi(app) {
   router.use("/etiquetasExt54_8", etiquetasExt54_8Router);
 
   router.use("/permisos", permisos_Router);
+  router.use("/roles", roles_Router);
+  router.use("/rolesPemisos", rolesPermisos_Router);
 }
 
 module.exports = routerApi;

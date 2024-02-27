@@ -79,6 +79,8 @@ const {
 } = require("./extrusor/etiquetasExt54_8.model");
 
 const { Permiso, PermisoSchema } = require("./permisos.model");
+const { Rol, RolesSchema } = require("./roles.model");
+const { RolPermiso, RolesPermisosSchema } = require("./rolesPermisos.model");
 
 function setupModels(sequelize) {
   User.init(UserSchema, User.config(sequelize));
@@ -168,6 +170,8 @@ function setupModels(sequelize) {
   );
 
   Permiso.init(PermisoSchema, Permiso.config(sequelize));
+  Rol.init(RolesSchema, Rol.config(sequelize));
+  RolPermiso.init(RolesPermisosSchema, RolPermiso.config(sequelize));
 }
 
 module.exports = setupModels;
