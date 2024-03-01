@@ -103,35 +103,23 @@ module.exports = {
     ];
 
     const permisosInDB = await Permiso.findAll();
-    console.log({permisosInDB:permisosInDB.length, permisos:permisos.length});
+    console.log({
+      permisosInDB: permisosInDB.length,
+      permisos: permisos.length,
+    });
 
-    if(permisosInDB.length < permisos.length){
-      for(const per of permisos){
-        const perInDB = permisosInDB.map(e => e.dataValues.permisos);
-        if(!perInDB.includes(per.permisos)){
+    if (permisosInDB.length < permisos.length) {
+      for (const per of permisos) {
+        const perInDB = permisosInDB.map((e) => e.dataValues.permisos);
+        if (!perInDB.includes(per.permisos)) {
           const created = await Permiso.create({
             group: per.group,
             permisos: per.permisos,
-            text_font: per.text_font
+            text_font: per.text_font,
           });
         }
       }
     }
-
-    /* for(const per of permisos){
-      const created = await Permiso.create({
-        group: per.group,
-        permisos: per.permisos,
-        text_font: per.text_font
-      });
-      console.log({created})
-    } */
-
-    // Sincroniza el modelo con la base de datos
-    //await Permiso.sync();
-
-    // Inserta los datos en la tabla de permisos
-    //await Permiso.bulkCreate(permisos);
 
     console.log("Datos de permisos insertados correctamente.");
   },
