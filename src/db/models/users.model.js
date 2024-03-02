@@ -1,5 +1,4 @@
 const { Model, DataTypes, Sequelize } = require("sequelize");
-const { Rol, RolesSchema } = require("./roles.model");
 
 const USER_TABLE = "users";
 
