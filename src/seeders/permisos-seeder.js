@@ -100,6 +100,12 @@ module.exports = {
         text_font: "Mostrar todos las Etiquetas",
         descripcion: "",
       },
+      {
+        group: "usuarios",
+        permisos: "usuarios.mostrar",
+        text_font: "Mostrar todos los usuarios",
+        descripcion: "",
+      },
     ];
 
     const permisosInDB = await Permiso.findAll();

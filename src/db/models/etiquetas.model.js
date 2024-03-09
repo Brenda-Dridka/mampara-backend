@@ -33,8 +33,13 @@ const EtiquetaSchema = {
   },
   fecha: {
     allowNull: false,
-    type: DataTypes.DATE,
+    type: DataTypes.STRING,
     field: "fecha",
+  },
+  fecha_entrega: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    field: "fecha_entrega",
   },
   kilos: {
     allowNull: false,
@@ -56,11 +61,6 @@ const EtiquetaSchema = {
     allowNull: false,
     type: DataTypes.STRING,
     field: "extrusor",
-  },
-  posicion: {
-    allowNull: false,
-    type: DataTypes.STRING,
-    field: "posicion",
   },
 };
 
