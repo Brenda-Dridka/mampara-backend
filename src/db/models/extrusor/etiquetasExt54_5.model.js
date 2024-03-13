@@ -33,9 +33,10 @@ const EtiquetaExt54_5Schema = {
   },
   fecha: {
     allowNull: false,
-    type: DataTypes.DATE,
+    type: DataTypes.STRING,
     field: "fecha",
   },
+
   kilos: {
     allowNull: false,
     type: DataTypes.STRING,
@@ -57,10 +58,10 @@ const EtiquetaExt54_5Schema = {
     type: DataTypes.STRING,
     field: "extrusor",
   },
-  posicion: {
+  fecha_entrega: {
     allowNull: false,
     type: DataTypes.STRING,
-    field: "posicion",
+    field: "fecha_entrega",
   },
 };
 

@@ -36,6 +36,7 @@ const EtiquetaBussllSchema = {
     type: DataTypes.STRING,
     field: "fecha",
   },
+
   kilos: {
     allowNull: false,
     type: DataTypes.STRING,
@@ -57,10 +58,10 @@ const EtiquetaBussllSchema = {
     type: DataTypes.STRING,
     field: "extrusor",
   },
-  posicion: {
+  fecha_entrega: {
     allowNull: false,
     type: DataTypes.STRING,
-    field: "posicion",
+    field: "fecha_entrega",
   },
 };
 

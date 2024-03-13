@@ -10,49 +10,41 @@ module.exports = {
         group: "Extrusores",
         permisos: "extrusores.mostrar",
         text_font: "Mostrar todos las Etiquetas",
-        descripcion: "",
       },
       {
         group: "Extrusores",
         permisos: "extrusores.crear",
         text_font: "Crear las Etiquetas",
-        descripcion: "",
       },
       {
         group: "Extrusores",
         permisos: "extrusores.editar",
         text_font: "Editar las Etiquetas",
-        descripcion: "",
       },
       {
         group: "Extrusores",
         permisos: "extrusores.pendiente",
         text_font: "Pendientes las Etiquetas",
-        descripcion: "",
       },
       {
         group: "Extrusores",
         permisos: "extrusores.extruir",
         text_font: "Extruir las Etiquetas",
-        descripcion: "",
       },
       {
         group: "Extrusores",
         permisos: "extrusores.eliminar",
         text_font: "Eliminar las Etiquetas",
-        descripcion: "",
       },
       {
         group: "Extrusores",
         permisos: "extrusores.exportacion",
         text_font: "Importar excel",
-        descripcion: "",
       },
       {
         group: "Extrusores",
         permisos: "extrusores.mover",
         text_font: "Mover las Etiquetas",
-        descripcion: "",
       },
 
       //Productos
@@ -60,31 +52,26 @@ module.exports = {
         group: "Productos",
         permisos: "productos.mostrar",
         text_font: "Mostrar todos las Productos",
-        descripcion: "",
       },
       {
         group: "Productos",
         permisos: "productos.crear",
         text_font: "Crear las Productos",
-        descripcion: "",
       },
       {
         group: "Productos",
         permisos: "productos.editar",
         text_font: "Editar las Productos",
-        descripcion: "",
       },
       {
         group: "Productos",
         permisos: "productos.eliminar",
         text_font: "Eliminar las Productos",
-        descripcion: "",
       },
       {
         group: "Productos",
         permisos: "productos.exportacion",
         text_font: "Importar excel",
-        descripcion: "",
       },
 
       //productos extruidos
@@ -92,19 +79,13 @@ module.exports = {
         group: "Productos_estruidos",
         permisos: "productos_estruidos.mostrar",
         text_font: "Mostrar todos las Etiquetas",
-        descripcion: "",
       },
-      {
-        group: "teeestt",
-        permisos: "PRUEBA_____",
-        text_font: "Mostrar todos las Etiquetas",
-        descripcion: "",
-      },
+
+      //User
       {
         group: "usuarios",
         permisos: "usuarios.mostrar",
-        text_font: "Mostrar todos los usuarios",
-        descripcion: "",
+        text_font: "Mostrar todos los Usuarios",
       },
     ];
 
