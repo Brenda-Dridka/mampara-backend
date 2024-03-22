@@ -40,7 +40,7 @@ const UserSchema = {
     type: DataTypes.STRING,
     field: "password",
   },
-  rol_ususario: {
+  rol_usuario: {
     allowNull: false,
     type: DataTypes.STRING,
     field: "rol_ususario",

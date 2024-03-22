@@ -41,11 +41,6 @@ module.exports = {
         permisos: "extrusores.exportacion",
         text_font: "Importar excel",
       },
-      {
-        group: "Extrusores",
-        permisos: "extrusores.mover",
-        text_font: "Mover las Etiquetas",
-      },
 
       //Productos
       {
@@ -86,6 +81,11 @@ module.exports = {
         group: "usuarios",
         permisos: "usuarios.mostrar",
         text_font: "Mostrar todos los Usuarios",
+      },
+      {
+        group: "Extrusores",
+        permisos: "extrusores.mostrarOpciones",
+        text_font: "Mover las Etiquetas",
       },
     ];
 
